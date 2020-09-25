@@ -27,9 +27,9 @@ namespace Calculator
                     case '2':
                         //perimeter of square
 
-                        Console.WriteLine("Enter the length of one side.")
-                        double SquareLength =
-                        Console.WriteLine("The perimeter is {0} cm", SquarePerimeter(SquareLength))
+                        Console.WriteLine("Enter the length of one side.");
+                        double SquareLength = double.Parse(Console.ReadLine());
+                        Console.WriteLine("The perimeter is {0} cm", SquarePerimeter(SquareLength));
                         break;
                     case '3':
                         //area of circle
