@@ -32,7 +32,10 @@ namespace Calculator
                         Console.WriteLine("The perimeter is {0} cm", SquarePerimeter(SquareLength));
                         break;
                     case '3':
-                        //area of circle
+                        //perimeter of circle
+                        Console.WriteLine("Enter the radius of the circle.");
+                        double CircleRadius = double.Parse(Console.ReadLine());
+                        Console.WriteLine("The perimeter is {0} cm",CircleArea(CircleRadius));
                         break;
                     case '4':
                         //perimeter of circle
@@ -106,5 +109,9 @@ namespace Calculator
         {
             return SquareLength*4;
         }
-    }
+        static double CircleArea(double CircleRadius)
+        {
+            return CircleRadius*CircleRadius*3.142;
+        }
+    }   
 }
